@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyFirstAndroid.MainPage">
+
+    <StackLayout BackgroundColor="#8784e3" Spacing="20">
+
+
+        <Label Text="Welcome to my first APP"
+       HorizontalOptions="Center"
+       TextColor="Blue"
+       FontSize="30"/>
+
+        <Label Text="" 
+       FontSize="50"/>
+
+        <Label Text="Вход"
+       HorizontalOptions="Center"
+       TextColor="Blue"
+       FontSize="40"/>
+
+
+        <Entry Placeholder="Введите логин"
+       BackgroundColor="#dadae1"
+       Margin="20,0,20,0"
+       Keyboard="Email"/>
+
+        <StackLayout Orientation="Horizontal" Spacing="20">
+            <Entry Placeholder="Введите пароль"
+       BackgroundColor="#dadae1"
+       Margin="20,0,0,0"
+       IsPassword="True"
+       x:Name="PasswordEntry"
+       HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="*" 
+        Margin="0,0,20,0"
+        WidthRequest="40"
+        HeightRequest="40"
+        CornerRadius="20"
+        BackgroundColor="#dadae1"
+        TextColor="Black"
+        Clicked="OnShowPassword"
+        x:Name="PasswordButton"
+        HorizontalOptions="End"/>
+        </StackLayout>
+
+
+        <Button Text="Регистрация"
+        FontSize="15"
+        HorizontalOptions="Center"
+        BackgroundColor="Transparent"
+        Clicked="OnRegistClicked"/>
+
+        <Button Text="Войти"
+        HorizontalOptions="Center"
+        FontSize="30"
+        BackgroundColor="#dadae1"
+        TextColor="#0004a0"
+        CornerRadius="20"
+        BorderWidth="2"
+        BorderColor="#0004a0"
+        />
+    </StackLayout>
+
+</ContentPage>
