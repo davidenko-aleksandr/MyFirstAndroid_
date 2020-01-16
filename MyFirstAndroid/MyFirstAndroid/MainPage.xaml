@@ -26,7 +26,8 @@
         <Entry Placeholder="Введите логин"
        BackgroundColor="#dadae1"
        Margin="20,0,20,0"
-       Keyboard="Email"/>
+       Keyboard="Email"
+               x:Name="LoginEntry"/>
 
         <StackLayout Orientation="Horizontal" Spacing="20">
             <Entry Placeholder="Введите пароль"
@@ -63,7 +64,7 @@
         CornerRadius="20"
         BorderWidth="2"
         BorderColor="#0004a0"
-        />
+        Clicked="OnOkClicked"/>
     </StackLayout>
 
 </ContentPage>
