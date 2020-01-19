@@ -9,7 +9,7 @@
     <StackLayout BackgroundColor="#8784e3" Spacing="20">
 
 
-        <Label Text="Welcome to my first APP"
+        <Label Text="My sport achievements"
        HorizontalOptions="Center"
        TextColor="Blue"
        FontSize="30"/>

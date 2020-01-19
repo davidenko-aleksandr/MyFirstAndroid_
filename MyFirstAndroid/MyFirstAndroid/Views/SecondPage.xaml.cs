@@ -20,19 +20,24 @@ namespace MyFirstAndroid.Views
             _userEmail = userEmail;
 
             WelcomeTextShow();
+            
         }
 
         private void WelcomeTextShow()
         {
             if (!string.IsNullOrWhiteSpace(_userEmail))
             {
-                HileLoginLabel.Text = $"Добро пожаловать {_userEmail}";
+                HiLoginLabel.Text = $"Добро пожаловать {_userEmail}";
             }
             else
             {
-                HileLoginLabel.Text = "Введите логин";
+                HiLoginLabel.Text = "Введите логин";
             }
         }
-        
+        async void OnNexPageClicked(object sender, EventArgs args)
+        {
+            await Services.NavigationService.NavigateToAsync(new ThirdPage());
+        }
+
     }
 }

@@ -55,8 +55,9 @@ namespace MyFirstAndroid
         }
         async void OnOkClicked(object sender, EventArgs args)
         {
-            
-            if (PasswordEntry.Text.Length>=8)
+            Regex regex = new Regex("@");
+
+            if (PasswordEntry.Text.Length>=8 && regex.IsMatch(LoginEntry.Text))
             {
 
             await NavigationService.NavigateToAsync(new SecondPage(LoginEntry.Text));

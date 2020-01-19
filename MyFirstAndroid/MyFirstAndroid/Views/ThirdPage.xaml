@@ -4,16 +4,11 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MyFirstAndroid.Views.SecondPage">
+             x:Class="MyFirstAndroid.Views.ThirdPage">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Transparent">
-            <Label
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                   x:Name="HiLoginLabel"/>
-
-<Button Text="Next page"
-        Clicked="OnNexPageClicked"/>
+        <StackLayout>
+           
+<Image Source="E:\my_project\App\MyFirstAndroid\MyFirstAndroid\MyFirstAndroid\Images\testImage.jpg" /> 
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
