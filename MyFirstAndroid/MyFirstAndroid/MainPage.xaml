@@ -6,32 +6,32 @@
              mc:Ignorable="d"
              x:Class="MyFirstAndroid.MainPage">
 
-    <StackLayout BackgroundColor="#8784e3" Spacing="20">
+    <StackLayout BackgroundColor="#000000" Margin="0,0,0,0" Padding="0">
 
 
         <Label Text="My sport achievements"
        HorizontalOptions="Center"
-       TextColor="Blue"
-       FontSize="30"/>
+       TextColor="#d9daf0"
+       FontSize="30"
+               FontFamily="fantasy"
+               VerticalOptions="Start"/>
 
-        <Label Text="" 
-       FontSize="50"/>
 
-        <Label Text="Вход"
+
+        <Image Source="rocky2mini.jpg" 
        HorizontalOptions="Center"
-       TextColor="Blue"
-       FontSize="40"/>
-
+       VerticalOptions="Center"
+       Margin="0,20,0,20"/>
 
         <Entry Placeholder="Введите логин"
-       BackgroundColor="#dadae1"
+       BackgroundColor="#d9daf0"
        Margin="20,0,20,0"
        Keyboard="Email"
                x:Name="LoginEntry"/>
 
         <StackLayout Orientation="Horizontal" Spacing="20">
             <Entry Placeholder="Введите пароль"
-       BackgroundColor="#dadae1"
+       BackgroundColor="#d9daf0"
        Margin="20,0,0,0"
        IsPassword="True"
        x:Name="PasswordEntry"
@@ -42,7 +42,7 @@
         WidthRequest="40"
         HeightRequest="40"
         CornerRadius="20"
-        BackgroundColor="#dadae1"
+        BackgroundColor="#d9daf0"
         TextColor="Black"
         Clicked="OnShowPassword"
         x:Name="PasswordButton"
@@ -53,17 +53,18 @@
         <Button Text="Регистрация"
         FontSize="15"
         HorizontalOptions="Center"
+                TextColor="#d9daf0"
         BackgroundColor="Transparent"
         Clicked="OnRegistClicked"/>
 
         <Button Text="Войти"
         HorizontalOptions="Center"
         FontSize="30"
-        BackgroundColor="#dadae1"
-        TextColor="#0004a0"
+        BackgroundColor="#d9daf0"
+        TextColor="#0e1e1e"
         CornerRadius="20"
         BorderWidth="2"
-        BorderColor="#0004a0"
+        BorderColor="#0e1e1e"
         Clicked="OnOkClicked"/>
     </StackLayout>
 
