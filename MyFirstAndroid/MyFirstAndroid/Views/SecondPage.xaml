@@ -4,16 +4,61 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MyFirstAndroid.Views.SecondPage">
+             x:Class="MyFirstAndroid.Views.SecondPage"
+             NavigationPage.HasNavigationBar = "false">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Transparent">
+        <StackLayout BackgroundColor="#000000">
             <Label
-                VerticalOptions="CenterAndExpand" 
+                VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" 
-                   x:Name="HiLoginLabel"/>
+                x:Name="HiLoginLabel"/>
 
-<Button Text="Next page"
-        Clicked="OnNexPageClicked"/>
+            <Button Text="Силовая тренировка"
+            Clicked="OnNexPageClicked"
+                    VerticalOptions="Center"
+                    HeightRequest="50"
+                    FontSize="23"
+                    BackgroundColor="#d9daf0"
+                    TextColor="#0e1e1e"
+                    CornerRadius="20"
+                    BorderWidth="2"
+                    BorderColor="#0e1e1e"
+                    Margin="5,10,5,10"/>
+            
+            <Button Text="Кардио тренировка" 
+                    VerticalOptions="Center"
+                    HeightRequest="50"
+                    FontSize="23"
+                    BackgroundColor="#d9daf0"
+                    TextColor="#0e1e1e"
+                    CornerRadius="20"
+                    BorderWidth="2"
+                    BorderColor="#0e1e1e"
+                    Margin="5,10,5,10"/>
+
+
+            <Button Text="Кроссфит" 
+                    VerticalOptions="Center"
+                    HeightRequest="50"
+                    FontSize="23"
+                    BackgroundColor="#d9daf0"
+                    TextColor="#0e1e1e"
+                    CornerRadius="20"
+                    BorderWidth="2"
+                    BorderColor="#0e1e1e"
+                    Margin="5,10,5,10"/>
+
+            <Button Text="Любое время и место"                    
+                    VerticalOptions="Center"
+                    HeightRequest="50"
+                    FontSize="23"
+                    BackgroundColor="#d9daf0"
+                    TextColor="#0e1e1e"
+                    CornerRadius="20"
+                    BorderWidth="2"
+                    BorderColor="#0e1e1e"
+                    Margin="5,10,5,10"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

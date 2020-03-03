@@ -15,11 +15,12 @@ namespace MyFirstAndroid
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
-    {
+    {        
         public MainPage()
         {
             InitializeComponent();
             PasswordEntry.TextChanged += PasswordEntry_TextChanged;
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private void PasswordEntry_TextChanged(object sender, TextChangedEventArgs e)
